@@ -18,5 +18,13 @@ public class UserValidatorTest {
 		
 		
 	}
+	
+	@Test
+	public void valid_lastname() {
+		
+		UserRegisteration obj = new UserRegisteration();
+		boolean result = obj.validateLastName("Smitha");
+		Assert.assertEquals(true , result);
+	}
 
 }
