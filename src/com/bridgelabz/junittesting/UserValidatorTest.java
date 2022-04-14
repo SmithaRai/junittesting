@@ -1,7 +1,8 @@
 package com.bridgelabz.junittesting;
 
+import org.junit.After;
 import  org.junit.Assert;
-
+import org.junit.Before;
 import org.junit.Test;
 
 
@@ -27,4 +28,12 @@ public class UserValidatorTest {
 		Assert.assertEquals(true , result);
 	}
 
+	@Test
+	public void valid_emailid() {
+		
+		UserRegisteration obj = new UserRegisteration();
+		boolean result = obj.validateEmailId("smitha@gmail.com");
+		Assert.assertEquals(true , result);
+	
+	}
 }
