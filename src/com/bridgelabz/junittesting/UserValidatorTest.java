@@ -36,4 +36,13 @@ public class UserValidatorTest {
 		Assert.assertEquals(true , result);
 	
 	}
+	
+	@Test
+	public void valid_phonenumber() {
+		
+		UserRegisteration obj = new UserRegisteration();
+		boolean result = obj.validatePhoneNumber("91 2341736897");
+		Assert.assertEquals(true , result);
+	}
+	
 }
