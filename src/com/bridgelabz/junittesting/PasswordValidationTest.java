@@ -32,5 +32,13 @@ public class PasswordValidationTest {
 			Assert.assertEquals(true , result);
 		
 		            }
+	 
+	 public void exactly_one_specialcharater_returntrue() {
+			
+			UserPasswordRegistration obj = new UserPasswordRegistration();
+			boolean result = obj.validatepassword_rule4("Smitha_R8@");
+			Assert.assertEquals(true , result);
+		
+		            }
 	
 }
