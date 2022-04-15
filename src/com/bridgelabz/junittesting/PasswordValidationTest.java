@@ -14,7 +14,15 @@ public class PasswordValidationTest {
 		boolean result = obj.validatepassword_rule1("Niharika");
 		Assert.assertEquals(true , result);
 
-	
-	}
+	            }
 
+	@Test
+      public void atleast_one_uppercase_returntrue() {
+		
+		UserPasswordRegistration obj = new UserPasswordRegistration();
+		boolean result = obj.validatepassword_rule2("Niharika_R");
+		Assert.assertEquals(true , result);
+	
+	            }
+	
 }
