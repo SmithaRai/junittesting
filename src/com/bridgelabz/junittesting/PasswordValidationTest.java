@@ -25,4 +25,12 @@ public class PasswordValidationTest {
 	
 	            }
 	
+	 public void atleast_one_numeric_returntrue() {
+			
+			UserPasswordRegistration obj = new UserPasswordRegistration();
+			boolean result = obj.validatepassword_rule3("Smitha_R8");
+			Assert.assertEquals(true , result);
+		
+		            }
+	
 }
